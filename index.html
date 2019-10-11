@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src='./01冒泡.js' defer></script>
+    <style>
+        *{ margin: 0; padding: 0;}
+        #container{
+            border-left: 1px #000 solid;
+            border-top: 1px #000 solid;
+            overflow: hidden;
+            margin: 20px auto;
+            position: relative;
+        }
+        #container li{
+            list-style: none;
+            float: left;
+            border-right: 1px #000 solid;
+            border-bottom: 1px #000 solid;
+        }
+        #container li.sty1{
+            background: red;
+        }
+        #container li.sty2{
+            background: green;
+        }
+        #container li.sty3{
+            background: blue;
+        }
+        #btn{
+            display: block;
+            margin: 5px auto;
+        }
+    </style>
+    <script src='./05Astar寻路.js' defer></script>
 </head>
 <body>
-    
+    <ul id='container'></ul>
+    <input type='button' id='btn' value='开始寻路' />
 </body>
 </html>
